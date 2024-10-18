@@ -1,0 +1,1 @@
+export const selectDashboardMenu = (state) => state.handle.dashboard_menu;
