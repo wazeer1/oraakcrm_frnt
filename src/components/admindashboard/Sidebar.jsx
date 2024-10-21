@@ -21,7 +21,7 @@ const Sidebar = ({ menuItems }) => {
               className="cursor-pointer hover:bg-blue-700 p-2 rounded flex justify-between items-center"
               onClick={() => toggleSubMenu(index)}
             >
-              <span>{item.name}</span>
+              <span className="flex items-center gap-2">{item.icon}<span>{item.name}</span></span>
               {item.subMenu && (
                 <span>{openSubMenus[index] ? "▲" : "▼"}</span>
               )}
